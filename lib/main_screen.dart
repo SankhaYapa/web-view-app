@@ -12,9 +12,11 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: WebView(
-        initialUrl: "https://www.dorpip.org.uk/",
-        javascriptMode: JavascriptMode.unrestricted,
+      body: SafeArea(
+        child: WebView(
+          initialUrl: "https://www.dorpip.org.uk/",
+          javascriptMode: JavascriptMode.unrestricted,
+        ),
       ),
     );
   }
