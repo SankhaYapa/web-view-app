@@ -1,4 +1,4 @@
-import 'package:dorpip/main_screen.dart';
+import 'package:dorpip/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const MainScreen(),
+      home: const SplashScreen(),
     );
   }
 }
